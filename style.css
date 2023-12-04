@@ -1,0 +1,268 @@
+.navbar-bg {
+    background: #0d4f9a;
+}
+
+body {
+    top: 0;
+    background: #ffffff;
+    font-family: var(--font-stack-body, "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif);
+}
+
+.nav-dropdown {
+    background-color: #0b3b60;
+}
+
+.navbar {
+    --bs-navbar-padding-x: 2;
+    height: 45px;
+}
+
+.logo {
+    width: 33.7px;
+    height: 35px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.logo-content {
+    margin: 5px 0;
+}
+
+.navbar-brand {
+    font-size: 17.5px;
+    letter-spacing: 1.5px;
+}
+
+.support-logo {
+    width: 33.7px;
+    height: 35px;
+    margin-left: 17em;
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    font-size: var(--font-size-siteheader-link-xsmall, .84375em) !important;
+}
+
+.dropdown-menu {
+    top: 38.625px;
+    left: 751.211px;
+    position: absolute;
+    width: 400px;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    left: 11em;
+    top: 2.75em;
+    border-radius: 0px;
+}
+
+.logo-content:hover .text-light {
+    color: rgb(174, 198, 234) !important;
+}
+
+.nav-link:hover .text-light,
+.nav-link:hover .support-logo {
+    color: rgb(174, 198, 234) !important;
+}
+
+.person-logo {
+    width: 24.56px;
+    height: 32px;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.spacing {
+    letter-spacing: 1.5px;
+}
+
+.account-dropdown {
+    left: 14px !important;
+    width: 210px !important;
+}
+
+.navbar-nav .nav-item.dropdown:hover .nav-dropdown {
+    display: block;
+}
+
+.site-logo {
+    width: 224px;
+    height: 76px;
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+.nav-height {
+    height: 82.16px !important;
+
+    border-bottom: 5px solid var(--color-top-bar-bg, #0d4f9a);
+
+}
+
+.shop-bg {
+    background-color: var(--color-nav-bg, #0d4f9a);
+    border-radius: 7px;
+    color: var(--color-nav-text, #fff);
+    padding: 9px 15px 9px 15px;
+    margin-left: 5em;
+    margin-right: 3em;
+    font-family: var(--font-stack-body, "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.icon-size {
+    font-size: 30px !important;
+}
+
+.header-items {
+    color: #0d4f9a;
+}
+
+.header-items:hover {
+    color: rgb(174, 198, 234) !important;
+}
+
+.header-els {
+    margin-top: 0.75em;
+    font-family: var(--font-stack-body, "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif) !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    margin-right: 1em;
+}
+
+.search-logo {
+    position: absolute;
+    right: 2em;
+    height: 1.75em;
+    width: 1.75em;
+    top: 1.7em;
+}
+
+.search-input {
+    padding: 10px 140px 10px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: normal;
+    border-radius: 5px;
+}
+
+.breadcrumb a {
+    color: #3f87d8;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.side-review-btn {
+    background-color: #0b3b60;
+    display: inline-block;
+    padding: 15px 20px;
+    transform: rotate(270deg);
+    margin-left: -3.2em;
+    position: fixed;
+    top: 22em;
+}
+
+.main {
+    margin-top: 1.3em;
+}
+
+.vertical-pics {
+    padding-top: 80px;
+}
+
+.vertical-pics img {
+    margin: 0 auto;
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.vertical-pics img:hover {
+    opacity: 0.6;
+}
+
+.main-content {
+    display: flex;
+}
+
+.side-carousel {
+    margin-left: 5em;
+}
+
+.middle-sec {
+    margin-left: 5em;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #0d4f9a;
+}
+
+.stars-rating {
+    color: rgb(47, 167, 60);
+}
+
+.review-stars {
+    color: #0d4f9a;
+    font-weight: 300;
+    font-size: small;
+}
+
+.reviews {
+    text-align: center;
+}
+
+#preview {
+    margin-top: 10px;
+    width: 350px;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-img img {
+    width: 100%;
+}
+
+.main-img:hover img {
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.package-choice {
+    text-align: center;
+}
+
+.choose-pkg {
+    font-weight: 800;
+    font-size: x-large;
+    color: #0d4f9a;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.one-time {
+    background-color: #0d4f9a;
+    border-color: #0d4f9a;
+    color: white;
+    font-weight: 800;
+    font-size: larger;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
