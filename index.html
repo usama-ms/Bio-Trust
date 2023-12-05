@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>BioTrust</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -12,6 +12,11 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/9f3ff37e9b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
 </head>
 </body>
 <nav class="navbar navbar-expand-lg ">
@@ -31,34 +36,61 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light spacing" href="#" role="button" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light spacing account-logo" href="#" role="button"
+                        aria-expanded="false">
                         <img class="support-logo" src="assets/chat-bubbles.png" alt="CUSTOMER SUPPORT">
                         <span class="text-light">CUSTOMER SUPPORT</span>
                     </a>
 
-                    <ul class="dropdown-menu nav-dropdown">
-                        <li><a class="dropdown-item text-light" href="#">Action</a></li>
-                        <li><a class="dropdown-item text-light" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu nav-dropdown customer-support-dropdown">
+                        <li><a class="dropdown-item text-light support-dropdown-heading" href="#">
+                                <h4>HOW CAN WE HELP YOU?</h4>
+                            </a></li>
+                        <div class="support">
+                            <div class="cs-menu-chat-container d-flex justify-content-between">
+                                <div class="cs-menu-image-container text-light fs-6"><img src="" alt="24/7 Chat"></div>
+                                <div class="cs-menu-support-content-container">
+                                    <h5 class="support-chat">24/7 CHAT</h5>
+                                    <p class="text-light fw-light">Get help now from Aidan, your<br>BioTRUST product
+                                        expert</p>
+                                    <button type="button" class="btn btn-chat-now text-light">CHAT NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="support-question">
+                            <div class="cs-menu-help-center-container d-flex justify-content-between">
+                                <div class="cs-menu-image-container text-light"><img src="" alt="Questions"></div>
+                                <div class="cs-menu-support-content-containers">
+                                    <h4 class="support-question">Questions?</h4>
+                                    <p class="text-light fw-light">Get answers by visiting the<br>customer help center
+                                    </p><button type="button" class="btn btn-help-center text-light">HELP
+                                        CENTER</button>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light d-flex align-items-center spacing" href="#"
-                        role="button" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light d-flex align-items-center spacing account-logo"
+                        href="#" role="button" aria-expanded="false">
                         <img class="person-logo" src="assets/person.png" alt="ACCOUNT SUPPORT">
                         <span class="text-light">MY ACCOUNT</span>
                     </a>
 
                     <ul class="dropdown-menu nav-dropdown account-dropdown">
-                        <li><a class="dropdown-item text-light" href="#">Action</a></li>
-                        <li><a class="dropdown-item text-light" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item text-light" href="#">Purchase History</a></li>
+
+                        <li><a class="dropdown-item text-light" href="#">Manage Subscription</a></li>
+
+                        <li><a class="dropdown-item text-light" href="#">Track My Order</a></li>
+
+                        <li><a class="dropdown-item text-light" href="#">Forgot Password</a></li>
+
+                        <li><a class="dropdown-item text-light" href="#">Create Account</a></li>
+
+                        <li><a class="dropdown-item text-light" href="#">Customer SUupport</a></li>
+
+                        <li><a class="dropdown-item text-light account-bottom-border" href="#">Login</a></li>
                     </ul>
                 </li>
                 <li class="nav-item d-flex align-items-center">
@@ -84,13 +116,15 @@
                         <span class="">SHOP</span>
                     </a>
 
-                    <ul class="dropdown-menu nav-dropdown">
-                        <li><a class="dropdown-item text-light" href="#">Action</a></li>
-                        <li><a class="dropdown-item text-light" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu nav-dropdown shop-dropdown">
+                        <li><a class="dropdown-item text-light" href="#">ALL PRODUCTS</a></li>
+                        <li><a class="dropdown-item text-light" href="#">PROTIENS</a></li>
+                        <li><a class="dropdown-item text-light" href="#">COLLAGEN PROTIEN</a></li>
+                        <li><a class="dropdown-item text-light" href="#">IMMUNE SUPPORT</a></li>
+                        <li><a class="dropdown-item text-light" href="#">HEALTHY LIVING</a></li>
+                        <li><a class="dropdown-item text-light" href="#">DIJESTIVE HEALTH</a></li>
+                        <li><a class="dropdown-item text-light" href="#">ANTI-AGING</a></li>
+                        <li><a class="dropdown-item text-light" href="#">GEAR</a></li>
                     </ul>
                 </li>
                 <li class="nav-item header-els">
@@ -122,21 +156,20 @@
         <span>&starf; REVIEWS</span>
     </div>
     <div class="main-content">
-        <div class="side-carousel">
-            <div class="vertical-pics">
-                <img class="img-fluid" src="assets/protein/protein1.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein2.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein3.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein4.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein5.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein6.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein7.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein8.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein9.png" alt="" />
-                <img class="img-fluid" src="assets/protein/protein10.png" alt="" />
+        <div class="slick-carousel slick-theme-primary slick-vertical-dots"
+            data-slick="{&quot;arrows&quot;:true,&quot;verticalSwiping&quot;:true,&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;
+                :300,&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;vertical&quot;:true}">
+            <div class="side-carousel">
+                <div class="vertical-pics">
+                    <img class="img-fluid" src="assets/protein/protein1.png" alt="" />
+                    <img class="img-fluid" src="assets/protein/protein2.png" alt="" />
+                    <img class="img-fluid" src="assets/protein/protein3.png" alt="" />
+                    <img class="img-fluid" src="assets/protein/protein4.png" alt="" />
+                    <img class="img-fluid" src="assets/protein/protein5.png" alt="" />
+                    <img class="img-fluid" src="assets/protein/protein6.png" alt="" />
+                </div>
             </div>
         </div>
-
         <div class=" middle-sec col-md-4">
             <p class="main-title">AGELESS MULTI-COLLAGEN® PROTEIN POWDER</p>
             <div class="reviews">
@@ -156,46 +189,56 @@
                 <p class="select-saving">Select your money-saving option below:</p>
             </div>
             <div class="multiple-packages d-flex">
-                <div class="one-time">
-                    <button type="button" class="btn btn-primary">One-Time Purchase</button>
+                <div class="col-md-4">
+                    <button type="button" class="one-time">One-Time Purchase</button>
                 </div>
-                <div class="subscribe">
-                    <button type="button" class="btn btn-primary">Subscribe & Save 40%</button>
+                <div class="col-md-4">
+                    <button type="button" class="subscribe">Subscribe & Save 40%<i
+                            class="fa-solid fa-circle-question circle-question"></i></button>
                 </div>
             </div>
             <div class="package-cards d-flex">
                 <div class="one-pack">
-                    <div class="card w-50">
+                    <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Button</a>
+                            <div class="text">
+                                <p class="card-title">1 Pack</p>
+                                <span class="card-one">$49</span>
+                            </div>
+                            <div class="first-card-btn"><a href="#"
+                                    class="btn btn-primary flavor-btn">CHOOSE<br>FLAVOR</a></div>
+
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="three-pack">
-                    <div class="card w-50">
+                    <div class="card">
+                        <div class="mosttop">Most Popular</div>
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Button</a>
+                            <p class="card-title">3 Packs</p>
+                            <span class="card-text">$35<br>Per Pack<br></span>
+                            <span class="save">(Save 29%)</span>
+                            <a href="#" class="btn btn-primary flavor-btn">CHOOSE<br>FLAVORS</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="six-pack">
-                    <div class="card w-50">
+                    <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Button</a>
+                            <p class="card-title">6 Packs</p>
+                            <span class="card-text">$31<br>Per Pack<br></span>
+                            <span class="save">(Save 36%)</span>
+                            <a href="#" class="btn btn-primary flavor-btn">CHOOSE<br>FLAVORS</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
+            </div>
+            <div class="foot-text">
+                <p>PHOTOS FROM THE #biotrust COMMUNITY</p>
             </div>
         </div>
     </div>
 </div>
-
 </body>
 
 </html>

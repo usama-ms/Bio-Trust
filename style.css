@@ -34,14 +34,39 @@ body {
 }
 
 .support-logo {
-    width: 33.7px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     margin-left: 17em;
     margin-right: 10px;
 }
 
+.customer-support-dropdown {
+    padding: 15px 20px 15px 20px;
+}
+
 .navbar-nav {
     font-size: var(--font-size-siteheader-link-xsmall, .84375em) !important;
+}
+
+.support-chat {
+    color: rgb(47, 167, 60);
+}
+
+.support-question {
+    color: rgb(47, 167, 60);
+    margin-top: 5px;
+}
+
+.btn-chat-now {
+    width: 150px;
+    height: 32px;
+    background-color: rgb(47, 167, 60);
+}
+
+.btn-help-center {
+    width: 150px;
+    height: 32px;
+    background-color: rgb(47, 167, 60);
 }
 
 .dropdown-menu {
@@ -51,11 +76,35 @@ body {
     width: 400px;
 }
 
+.support {
+    border-bottom: 1px solid rgba(0, 109, 183, .3);
+}
+
 .navbar-nav .dropdown-menu {
     position: absolute;
     left: 11em;
     top: 2.75em;
     border-radius: 0px;
+}
+
+.me-2 {
+    margin-right: 3.5rem !important;
+}
+
+.shop-dropdown {
+    position: fixed !important;
+    top: 6em !important;
+    left: 21.9em !important;
+    background-color: #fff;
+    width: 13.5rem;
+}
+
+.shop-dropdown li a {
+    color: #0d4f9a !important;
+}
+
+.shop-dropdown li a:hover {
+    opacity: 0.5 !important;
 }
 
 .logo-content:hover .text-light {
@@ -68,8 +117,8 @@ body {
 }
 
 .person-logo {
-    width: 24.56px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     margin-left: 1em;
     margin-right: 10px;
 }
@@ -81,10 +130,53 @@ body {
 .account-dropdown {
     left: 14px !important;
     width: 210px !important;
+    padding-block: 0;
+}
+
+.account-logo {
+    margin-top: 6px;
+}
+
+.account-dropdown li a {
+    padding-left: 10px;
+    border-bottom: 1px solid rgba(0, 109, 183, .3);
+    padding-top: 12px;
+    line-height: 12px;
+    padding-bottom: 12px;
+    font-size: 14px;
+}
+
+.cs-menu-support-content-containers {
+    position: relative;
+    left: -22px;
+}
+
+.support-dropdown-heading {
+    text-align: center;
+    font-size: 0.5em !important;
+}
+
+.support-dropdown-heading:hover {
+    background-color: #0b3b60;
+}
+
+.account-dropdown li a:hover {
+    background-color: #0d4f9a !important;
+}
+
+.account-bottom-border {
+    border-bottom: none !important;
 }
 
 .navbar-nav .nav-item.dropdown:hover .nav-dropdown {
     display: block;
+}
+
+.circle-question {
+    color: #2bb34d;
+    position: relative;
+    top: -2.2em;
+    left: 4em;
 }
 
 .site-logo {
@@ -96,9 +188,7 @@ body {
 
 .nav-height {
     height: 82.16px !important;
-
     border-bottom: 5px solid var(--color-top-bar-bg, #0d4f9a);
-
 }
 
 .shop-bg {
@@ -135,10 +225,10 @@ body {
 
 .search-logo {
     position: absolute;
-    right: 2em;
+    right: 5.2em;
     height: 1.75em;
     width: 1.75em;
-    top: 1.7em;
+    top: 1.5em;
 }
 
 .search-input {
@@ -260,9 +350,170 @@ body {
     color: white;
     font-weight: 800;
     font-size: larger;
-    width: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    width: 342px;
+    height: 75px;
     border-radius: 4px;
-    margin-right: 10px;
+    margin-left: 1em;
+    border-radius: 5px !important;
+}
+
+.subscribe {
+    background-color: white;
+    border-color: #0d4f9a;
+    color: #0d4f9a;
+    font-weight: 400;
+    font-size: larger;
+    width: 342px;
+    height: 75px;
+    border-radius: 4px;
+    margin-left: 7em;
+    border-radius: 5px !important;
+}
+
+.package-cards {
+    margin-top: 3em;
+}
+
+.one-pack {
+    border: 2px solid #0d4f9a;
+    border-right: 0;
+    margin-top: 15px;
+    width: 218.4px;
+    padding-bottom: 0px;
+    margin-bottom: 3em;
+}
+
+.three-pack {
+    width: 212.4px;
+}
+
+.six-pack {
+    width: 218.4px;
+}
+
+.flavor-btn {
+    width: 174.72px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #2bb34d;
+    border-color: #2bb34d;
+    margin-bottom: -5px;
+}
+
+.flavor-btn:hover {
+    background-color: #2bb34d;
+    border-color: #2bb34d;
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #0d4f9a;
+}
+
+.card-text {
+    padding-top: 10px;
+    font-size: 35px;
+    color: #2bb34d;
+    line-height: 33px !important;
+    font-weight: 550;
+}
+
+.card-one {
+    padding-top: 10px;
+    font-size: 35px;
+    color: black;
+    font-weight: 550;
+}
+
+.save {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(220, 70, 35);
+    font-family: var(--font-stack-body, "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif);
+}
+
+.one-pack {
+    border: 2px solid #0d4f9a;
+    border-right: 0;
+    margin-top: 15px;
+
+}
+
+.six-pack {
+    border: 2px solid #0d4f9a;
+    border-left: 0;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.three-pack {
+    border: 5px solid #0d4f9a;
+    border-top: 3px;
+    margin-bottom: 20px;
+}
+
+.three-pack .save {
+    display: block;
+    margin-bottom: 22px;
+    margin-top: 4px;
+}
+
+.six-pack .save {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.card {
+    border-radius: 0% !important;
+    border: none;
+    height: 100%;
+}
+
+.card-body {
+    text-align: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mosttop {
+    background-color: #0d4f9a;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0px;
+    text-align: center;
+    margin-left: -5px;
+    margin-top: -1px;
+    width: 10.62em;
+}
+
+.text {
+    margin-bottom: 67px;
+}
+
+.foot-text {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #0d4f9a;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.back {
+    background-color: #0d4f9a;
+}
+
+@media (max-width: 600px) {
+    .site-logo {
+        max-width: 80% !important;
+        width: 30%;
+        height: 30%;
+        margin-left: 0%;
+    }
 }
