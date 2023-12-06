@@ -186,7 +186,7 @@ body {
     margin-right: auto;
 }
 
-.nav-height {
+.nav-styling {
     height: 82.16px !important;
     border-bottom: 5px solid var(--color-top-bar-bg, #0d4f9a);
 }
@@ -215,7 +215,7 @@ body {
     color: rgb(174, 198, 234) !important;
 }
 
-.header-els {
+.header-menu {
     margin-top: 0.75em;
     font-family: var(--font-stack-body, "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif) !important;
     font-size: 15px !important;
@@ -344,7 +344,7 @@ body {
     margin-bottom: 0px;
 }
 
-.one-time {
+.purchase-btn {
     background-color: #0d4f9a;
     border-color: #0d4f9a;
     color: white;
@@ -420,7 +420,7 @@ body {
     font-weight: 550;
 }
 
-.card-one {
+.first-card {
     padding-top: 10px;
     font-size: 35px;
     color: black;
@@ -479,7 +479,7 @@ body {
     justify-content: space-between;
 }
 
-.mosttop {
+.card-heading {
     background-color: #0d4f9a;
     color: white;
     font-size: 20px;
@@ -510,10 +510,259 @@ body {
 }
 
 @media (max-width: 600px) {
+    .card-body::after {
+        content: url('assets/protein/protein2x.png');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        left: -66px;
+    }
+
     .site-logo {
         max-width: 80% !important;
         width: 30%;
         height: 30%;
         margin-left: 0%;
+    }
+
+    .navbar-brand {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    .logo {
+        width: 20px;
+        height: 35px;
+        margin-left: -4px;
+        margin-right: 5px;
+    }
+
+    .navbar-collapse .collapse .show {
+        margin-top: 4.5em !important;
+    }
+
+    .navbar-collapse {
+        margin-top: 4.5em !important;
+    }
+
+    .nav-item .dropdown {
+        margin-left: -16em !important;
+        margin-bottom: -1em !important;
+    }
+
+    .nav-link .dropdown-toggle .account-logo {
+        margin-left: -16em !important;
+        margin-bottom: -1em !important;
+    }
+
+    .side-review-btn {
+        display: none !important;
+    }
+
+    .breadcrumb {
+        display: none !important;
+    }
+
+    .main-content {
+        display: block !important;
+    }
+
+    .side-carousel {
+        display: none !important;
+    }
+
+    .main-title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 900;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #0d4f9a;
+    }
+
+    .middle-sec {
+        margin-left: 0em !important;
+    }
+
+    .purchase-btn {
+        background-color: #0d4f9a;
+        border-color: #0d4f9a;
+        color: white;
+        font-weight: 800;
+        font-size: larger;
+        width: 183px;
+        height: 75px;
+        border-radius: 4px;
+        margin-left: 0em;
+        border-radius: 5px !important;
+    }
+
+    .subscribe {
+        background-color: white;
+        border-color: #0d4f9a;
+        color: #0d4f9a;
+        font-weight: 400;
+        font-size: larger;
+        width: 190px;
+        height: 75px;
+        border-radius: 4px;
+        margin-left: 1em;
+        border-radius: 5px !important;
+    }
+
+    .multiple-packages {
+        display: flex !important;
+    }
+
+    .package-cards {
+        display: block !important;
+    }
+
+    .card-body {
+        text-align: center;
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25em;
+    }
+
+    .text {
+        margin-bottom: 0px;
+    }
+
+    .card-title {
+        font-size: 22px;
+        font-weight: 900;
+        color: #0d4f9a;
+    }
+
+    .card-text {
+        font-size: 20px;
+        color: #2bb34d;
+        font-weight: 550;
+        line-height: 20px !important;
+        position: relative;
+        top: 35px;
+        left: -70px;
+    }
+
+    .save {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(220, 70, 35);
+        font-family: var(--font-stack-body, "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif);
+        position: relative;
+        left: -4em;
+    }
+
+    .flavor-btn {
+        width: 125px;
+        color: white;
+        background-color: #2bb34d;
+        border-color: #2bb34d;
+        margin-bottom: 10px;
+    }
+
+    .three-pack {
+        border: none;
+        border-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .card-body {
+        text-align: center;
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25em;
+        border: 2px solid #0d4f9a;
+
+    }
+
+    .one-pack {
+        border: none !important;
+        width: 218.4px;
+        padding-bottom: 0px;
+        margin-bottom: 3em;
+    }
+
+    .six-pack {
+        border: none !important;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .card-heading {
+        background-color: #0d4f9a;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        padding: 0px;
+        text-align: center;
+        margin-left: -1px;
+        margin-top: -35px;
+        width: 20.1em;
+    }
+
+    .package-cards {
+        margin-top: 0em !important;
+    }
+
+    .first-card {
+        padding-top: 10px;
+        font-size: 24px;
+        color: black;
+        font-weight: 550;
+    }
+
+    .search-logo {
+        position: absolute;
+        right: 1.5em;
+        height: 1.75em;
+        width: 1.75em;
+        top: 1.5em;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+
+    .search-input {
+        padding: 10px 140px 10px 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: normal;
+        border-radius: 5px;
+        display: none;
+    }
+
+    .header-items {
+        color: #0d4f9a;
+        display: none;
+
+    }
+
+    .navbar-toggler {
+        position: relative;
+        top: 3em;
+        z-index: 1000;
+    }
+
+    .three-pack .save {
+        display: block;
+        margin-bottom: 22px;
+        margin-top: 4px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 900;
+        color: #0d4f9a;
+        padding-left: 6em;
+        line-height: 17px;
+        padding-left: 89px;
     }
 }
